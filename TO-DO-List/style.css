@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: lightblue;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MainCard{
+    width: 500px;
+    min-height: 350px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: antiquewhite;
+    box-shadow: 0 10px 25px rgba(0,0,0, 0.7);
+    transition: 0.4s;
+}
+.title{
+    margin-bottom: 30px;
+    text-align: center;
+    color: blue;
+
+}
+#task{
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    width: 190px;
+    height: 40px;
+}
+
+#btn{
+    background-color: green;
+    width: 90px;
+    height: 40px;
+    border-radius: 5px;
+   
+    transform: 0.2;
+}
+#btn:hover{
+    transform: scale(1.02);
+     box-shadow: 0 10px 20px rgba(18, 177, 42, .3);
+}
+
+#tasklist li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    word-break: break-word;
+}
+
+#tasklist span{
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+#tasklist{
+    list-style:none;
+}
+.taskContainer{
+    margin-top: 20px;
+    height: 250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.editBtn{
+    background-color: royalblue;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.editBtn:hover{
+    background-color: blue;
+    transform: scale(1.05);
+}
+
+.delBtn{
+    background-color: crimson;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.delBtn:hover{
+    background-color: darkred;
+    transform: scale(1.05);
+}
+#label{
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
+}
+
+.taskheading{
+    margin-top: 20px;
+    font-size: 30px;
+    text-shadow: palegoldenrod;
+}
+
+.MainCard:hover{
+    transform: scale(1.02);
+}
+
+.statusBox{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+#pendingBox,
+#completedBox{
+    /* background:#8ef2c8; */
+    padding:12px 18px;
+    border-radius:12px;
+    font-size:20px;
+    font-weight:bold;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO-LIST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="MainCard">  
+        <div class="statusBox">
+
+    <div id="pendingBox">
+        Pending : <span id="pending">0</span>
+    </div>
+
+    <div id="completedBox">
+        Completed : <span id="completed">0</span>
+    </div>
+</div>
+    <h1 class="title">TO-DO-LIST</h1>
+
+    <label for="task" id="label">Enter Task </label>
+    <input type="text" id="task" placeholder="Enter your task">
+
+    <button onclick="addtask()" id="btn">Add</button>
+
+    <h3 class="taskheading">Task List :</h3>
+    <div class="taskContainer">
+    <ul id="tasklist"></ul>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
