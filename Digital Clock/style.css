@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0b0f14;
+}
+.clock{
+    display: flex;
+    align-items: center;
+    background-color: #111820;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
+    border-radius: 12px;
+    padding: 20px 40px;
+    gap: 15px;
+
+}
+#time{
+    font-size: 50px;
+    font-weight: 600px;
+    color:#00ff66;
+    letter-spacing: 10px;
+    font-variant-numeric: tabular-nums;
+}
+#ampm{
+    font-size: 20px;
+    font-weight: 600px;
+    color: #00ff66;
+}
