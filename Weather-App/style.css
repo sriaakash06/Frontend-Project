@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#87CEEB,#c9f2ff);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Main Card */
+
+.mainCard{
+    width:450px;
+    background:antiquewhite;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+
+/* Title */
+
+.title{
+    text-align:center;
+    color:#0d47a1;
+    margin-bottom:25px;
+    font-size:38px;
+}
+
+/* Search */
+
+.searchBox{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-bottom:25px;
+}
+
+#searchbox{
+    flex:1;
+    height:45px;
+    padding:0 15px;
+    border:none;
+    outline:none;
+    border-radius:10px;
+    font-size:16px;
+    box-shadow:0 3px 8px rgba(0,0,0,.15);
+}
+
+#btn{
+    width:100px;
+    border:none;
+    border-radius:10px;
+    background:#0d8d28;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#btn:hover{
+    background:#0a6d20;
+    transform:scale(1.05);
+}
+
+/* Weather */
+
+.weatherBox{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+#weatherIcon{
+    width:110px;
+    height:110px;
+    object-fit:contain;
+    margin-bottom:10px;
+}
+
+#cityName{
+    font-size:30px;
+    margin-bottom:8px;
+}
+
+#temperature{
+    font-size:50px;
+    color:#1565c0;
+    margin-bottom:5px;
+}
+
+.condition{
+    font-size:22px;
+    text-transform:capitalize;
+    color:#555;
+    margin-bottom:10px;
+}
+
+/* Details */
+
+.details{
+    margin-top:15px;
+}
+
+.row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 15px;
+    margin-bottom:10px;
+    background:white;
+    border-radius:10px;
+    box-shadow:0 3px 8px rgba(0,0,0,.08);
+    font-size:18px;
+}
+
+.row span:last-child{
+    font-weight:bold;
+    color:#1565c0;
+}
+
+/* Footer */
+
+footer{
+    margin-top:20px;
+    text-align:center;
+}
+
+.date,
+.time{
+    color:#555;
+    margin-top:5px;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="mainCard">
+
+    <h1 class="title">🌤 Weather App</h1>
+
+    <!-- Search -->
+    <div class="searchBox">
+        <input type="text" id="searchbox" placeholder="Enter city name...">
+        <button onclick="getcity()" id="btn">Search</button>
+    </div>
+
+    <!-- Weather -->
+    <div class="weatherBox">
+
+        <img id="weatherIcon" src="images/sun icon.png" alt="Weather Icon">
+
+        <h2 id="cityName">City Name</h2>
+
+        <h1 id="temperature">0°C</h1>
+
+        <h3 class="condition">Clear Sky</h3>
+
+    </div>
+
+    <!-- Weather Details -->
+    <div class="details">
+
+        <div class="row">
+            <span>💧 Humidity</span>
+            <span class="humidityresult"></span>
+        </div>
+
+        <div class="row">
+            <span>💨 Wind Speed</span>
+            <span class="windresult"></span>
+        </div>
+
+        <div class="row">
+            <span>🌡 Feels Like</span>
+            <span class="tempresult"></span>
+        </div>
+
+        <div class="row">
+            <span>👁 Visibility</span>
+            <span class="visibilityresult"></span>
+        </div>
+
+        <div class="row">
+            <span>🌅 Sunrise</span>
+            <span class="sunriseresult"></span>
+        </div>
+
+        <div class="row">
+            <span>🌇 Sunset</span>
+            <span class="sunsetresult"></span>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <h4 class="date"></h4>
+        <h4 class="time"></h4>
+    </footer>
+
+</div>
+<script src="config.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
